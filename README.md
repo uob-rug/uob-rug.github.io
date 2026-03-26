@@ -83,8 +83,7 @@ R User Group Organisers
 
 ## 🧾 Code of Conduct
 
-We are committed to providing a welcoming and harassment‑free environment.
-See the full Code of Conduct in CODE_OF_CONDUCT.md <to be added>. 
+We follow the R Consortium [R Community code of conduct](https://wiki.r-consortium.org/view/R_Consortium_and_the_R_Community_Code_of_Conduct).
 
 ## 📄 Licence
 
