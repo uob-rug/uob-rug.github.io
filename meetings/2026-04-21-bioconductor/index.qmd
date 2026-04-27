@@ -1,0 +1,49 @@
+---
+title: "Building and maintaining a Bioconductor package: a practical guide"
+description: |
+  TALK DESCRIPTION
+author:
+  - name: Ossama Edbali
+    url: URL
+date: 2026-04-21
+categories:
+  - bioconductor
+image: featured.jpg
+draft: false
+lightbox: true # N.B. need blank line between photos for this to work
+---
+
+## Overview
+
+## Event details
+
+**Date:** DATE
+
+**Time:** TIME
+
+**Location:** LOCATION
+
+**Teams**: [TEAMS LINK](url)
+
+## About the speaker
+
+## Resources
+
+- [Slides](URL){target="_blank"} [or add pptx/pdf to resources directory]
+
+<iframe class="slide-deck ar16x9" src="URL" title="Slides">
+</iframe>
+
+<!--
+
+## Photos
+
+Add after the event
+
+![](media/IMG1.jpeg){group="my-gallery"}
+
+![](media/IMG2.jpeg){group="my-gallery"}
+
+![](media/IMG3.jpeg){group="my-gallery"}
+
+-->
