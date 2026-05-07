@@ -1,6 +1,6 @@
 ---
 title: "University of Birmingham (UoB) R User Group"
-image: "media/logo_small.png"
+image: "images/logo_rug.png"
 about:
   template: trestles
   links:

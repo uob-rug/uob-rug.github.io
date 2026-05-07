@@ -8,7 +8,7 @@ author:
 date: 2026-04-21
 categories:
   - bioconductor
-image: featured.jpg
+image: "../../images/logo_rug.png"
 draft: false
 lightbox: true # N.B. need blank line between photos for this to work
 ---
@@ -29,10 +29,7 @@ lightbox: true # N.B. need blank line between photos for this to work
 
 ## Resources
 
-- [Slides](URL){target="_blank"} [or add pptx/pdf to resources directory]
-
-<iframe class="slide-deck ar16x9" src="URL" title="Slides">
-</iframe>
+- [Slides](Building_and_Maintaining_a_Bioconductor_Package.pdf)
 
 <!--
 

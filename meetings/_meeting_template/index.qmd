@@ -8,7 +8,7 @@ author:
 date: UPDATE
 categories:
   - talks
-image: featured.jpg
+image: "../../images/logo_rug.png"
 draft: true
 lightbox: true # N.B. need blank line between photos for this to work
 ---
@@ -29,7 +29,7 @@ lightbox: true # N.B. need blank line between photos for this to work
 
 ## Resources
 
-- [Slides](URL){target="_blank"} [or add pptx/pdf to resources directory]
+- [Slides](URL){target="_blank"} [or add pptx/pdf to directory]
 
 <iframe class="slide-deck ar16x9" src="URL" title="Slides">
 </iframe>
