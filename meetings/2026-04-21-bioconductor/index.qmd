@@ -17,11 +17,11 @@ lightbox: true # N.B. need blank line between photos for this to work
 
 ## Event details
 
-**Date:** DATE
+**Date:** 2026-04-21
 
-**Time:** TIME
+**Time:** 15:00
 
-**Location:** LOCATION
+**Location:** Elm House
 
 **Teams**: [TEAMS LINK](url)
 
