@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "meetings/2026-04-21-bioconductor/index.html#event-details",
+    "href": "meetings/2026-04-21-bioconductor/index.html#event-details",
+    "title": "Building and maintaining a Bioconductor package: a practical guide",
+    "section": "Event details",
+    "text": "Event details\nDate: 2026-04-21\nTime: 15:00\nLocation: Elm House\nTeams: Teams link"
+  },
+  {
+    "objectID": "meetings/2026-04-21-bioconductor/index.html#about-the-speaker",
+    "href": "meetings/2026-04-21-bioconductor/index.html#about-the-speaker",
+    "title": "Building and maintaining a Bioconductor package: a practical guide",
+    "section": "About the speaker",
+    "text": "About the speaker"
+  },
+  {
+    "objectID": "meetings/2026-04-21-bioconductor/index.html#resources",
+    "href": "meetings/2026-04-21-bioconductor/index.html#resources",
+    "title": "Building and maintaining a Bioconductor package: a practical guide",
+    "section": "Resources",
+    "text": "Resources\n\nSlides"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "University of Birmingham (UoB) R User Group",
+    "section": "",
+    "text": "Welcome to the University of Birmingham R User Group!\n👉 Official University page\nhttps://www.birmingham.ac.uk/research/arc/bear/user-groups/r-user-group\nThis GitHub site hosts code, examples, workshops, and materials for our community."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "University of Birmingham (UoB) R User Group",
+    "section": "",
+    "text": "Welcome to the University of Birmingham R User Group — a community for students, researchers, and staff who use the R programming language for data analysis, statistics, reproducible research, and data‑driven projects. We welcome all skill levels, from complete beginners to advanced users."
+  },
+  {
+    "objectID": "about.html#goals",
+    "href": "about.html#goals",
+    "title": "University of Birmingham (UoB) R User Group",
+    "section": "🎯 Goals",
+    "text": "🎯 Goals\n\nBuild a supportive and inclusive community around R at the university\nShare knowledge, workflows, and best practices\nPromote cross‑disciplinary collaboration\nDeliver hands‑on workshops and training\nSupport reproducible research using modern R tools\nProvide a space to ask questions and get help"
+  },
+  {
+    "objectID": "about.html#what-we-do",
+    "href": "about.html#what-we-do",
+    "title": "University of Birmingham (UoB) R User Group",
+    "section": "📅 What We Do",
+    "text": "📅 What We Do\n\n✅ Monthly Meetups\n\nTalks, tutorials, demonstrations, and lightning talks from group members.\n\n\n\n✅ Workshops\nTopics include:\n\nQuarto and reproducible reporting\nWorking with large datasets\nShiny dashboards\nR packages and project structure\n\n\n\n✅ Peer Support\nBring your code, your error messages, your plots — we can try to help.\n\n\n✅ Collaborative Projects\nShowcase projects, shared scripts, reproducible templates, and more."
+  },
+  {
+    "objectID": "about.html#who-can-join",
+    "href": "about.html#who-can-join",
+    "title": "University of Birmingham (UoB) R User Group",
+    "section": "🚀 Who Can Join?",
+    "text": "🚀 Who Can Join?\nAnyone affiliated with the university:\n\nUndergraduate students\nPostgraduates\nResearchers\nAcademic staff\nProfessional services\nData analysts and developers\n\nNo prior experience necessary."
+  },
+  {
+    "objectID": "about.html#getting-started-with-r",
+    "href": "about.html#getting-started-with-r",
+    "title": "University of Birmingham (UoB) R User Group",
+    "section": "🛠 Getting Started with R",
+    "text": "🛠 Getting Started with R\n\nInstall R and RStudio\n\nR: https://www.r-project.org\nRStudio (Posit): https://posit.co/download/rstudio-desktop\n\n\n\nLearn R\n\nR for Data Science (free book): https://r4ds.had.co.nz\nTidyverse docs: https://www.tidyverse.org\nQuarto: https://quarto.org"
+  },
+  {
+    "objectID": "about.html#contributing",
+    "href": "about.html#contributing",
+    "title": "University of Birmingham (UoB) R User Group",
+    "section": "🤝 Contributing",
+    "text": "🤝 Contributing\nWe welcome contributions such as:\n\nTalks (5–30 minutes)\nWorkshop ideas\nShared datasets\nImprovements to this repository\n\nTo contribute, please open an issue or pull request, or contact the organisers."
+  },
+  {
+    "objectID": "about.html#organising-committee",
+    "href": "about.html#organising-committee",
+    "title": "University of Birmingham (UoB) R User Group",
+    "section": "👯 Organising Committee",
+    "text": "👯 Organising Committee\n\nChristine Stawitz\nAlex Changenet\nOssama Edbali\nJack Sullivan\nAamir Sohail\nKiran Phalke\nLaura Bravo"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "University of Birmingham (UoB) R User Group",
+    "section": "📨 Contact",
+    "text": "📨 Contact\n📧 Email the R User Group Organiser: Christine Stawitz\n📧 Email the R user group: uobrug@lists.bham.ac.uk\n📅 Teams: R User Group Teams Channel"
+  },
+  {
+    "objectID": "about.html#code-of-conduct",
+    "href": "about.html#code-of-conduct",
+    "title": "University of Birmingham (UoB) R User Group",
+    "section": "🧾 Code of Conduct",
+    "text": "🧾 Code of Conduct\nWe follow the R Consortium R Community code of conduct."
+  },
+  {
+    "objectID": "about.html#licence",
+    "href": "about.html#licence",
+    "title": "University of Birmingham (UoB) R User Group",
+    "section": "📄 Licence",
+    "text": "📄 Licence\nUnless otherwise specified, content in this repository is licensed under the MIT Licence. See LICENSE for details."
+  },
+  {
+    "objectID": "meetings.html",
+    "href": "meetings.html",
+    "title": "Meetings",
+    "section": "",
+    "text": "Building and maintaining a Bioconductor package: a practical guide\n\n\n\nbioconductor\n\n\n\nOssama Edbali spoke about the requirements to get an R package approved for pubication in Bioconductor.\n\n\n\n\n\nApr 21, 2026\n\n\nOssama Edbali (Research Fellow, Computational Metabolomics)\n\n\n\n\n\nNo matching items"
+  }
+]
