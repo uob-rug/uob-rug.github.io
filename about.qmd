@@ -91,7 +91,8 @@ To contribute, please open an issue or pull request, or contact the organisers.
 R User Group Organisers
 
 📧 Email: uobrug@bham.ac.uk
- Teams: [R User Group Teams Channel](https://teams.microsoft.com/l/channel/19%3Adff6a564ac78446ba73dc6ca4a69e8e4%40thread.tacv2/R%20User%20Group?groupId=e7d5f918-4c85-4aa1-9ddd-a34db82b1729&tenantId=b024cacf-dede-4241-a15c-3c97d553e9f3) 
+
+📅 Teams: [R User Group Teams Channel](https://teams.microsoft.com/l/channel/19%3Adff6a564ac78446ba73dc6ca4a69e8e4%40thread.tacv2/R%20User%20Group?groupId=e7d5f918-4c85-4aa1-9ddd-a34db82b1729&tenantId=b024cacf-dede-4241-a15c-3c97d553e9f3) 
 
 ## 🧾 Code of Conduct
 
