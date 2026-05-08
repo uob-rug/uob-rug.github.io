@@ -1,9 +1,9 @@
 ---
 title: "Building and maintaining a Bioconductor package: a practical guide"
 description: |
-  TALK DESCRIPTION
+  Ossama Edbali spoke about the requirements to get an R package approved for pubication in Bioconductor.
 author:
-  - name: Ossama Edbali
+  - name: Ossama Edbali (Research Fellow, Computational Metabolomics)
     url: URL
 date: 2026-04-21
 categories:
@@ -23,7 +23,7 @@ lightbox: true # N.B. need blank line between photos for this to work
 
 **Location:** Elm House
 
-**Teams**: [TEAMS LINK](url)
+**Teams**: [Teams link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyZDdlNGUtZjI5ZC00Yzk5LWJkMjktYmViZWM1YzNhOTFi%40thread.v2/0?context=%7b%22Tid%22%3a%22b024cacf-dede-4241-a15c-3c97d553e9f3%22%2c%22Oid%22%3a%229255ac55-8191-41dc-94ee-df2e74a27860%22%7d)
 
 ## About the speaker
 
