@@ -55,14 +55,14 @@ No prior experience necessary.
 
 ### Install R and RStudio
 
-+ R: https://www.r-project.org
-+ RStudio (Posit): https://posit.co/download/rstudio-desktop
++ R: [https://www.r-project.org](https://www.r-project.org)
++ RStudio (Posit): [https://posit.co/download/rstudio-desktop](https://posit.co/download/rstudio-desktop)
 
 ### Learn R
 
-+ R for Data Science (free book): https://r4ds.had.co.nz
-+ Tidyverse docs: https://www.tidyverse.org
-+ Quarto: https://quarto.org
++ R for Data Science (free book): [https://r4ds.had.co.nz](https://r4ds.had.co.nz)
++ Tidyverse docs: [https://www.tidyverse.org](https://www.tidyverse.org)
++ Quarto: [https://quarto.org](https://quarto.org)
 
 
 ## 🤝 Contributing
@@ -88,9 +88,9 @@ To contribute, please open an issue or pull request, or contact the organisers.
 
 ## 📨 Contact
 
-R User Group Organisers
+📧 Email the R User Group Organiser: [Christine Stawitz](mailto:c.c.stawitz@bham.ac.uk)
 
-📧 Email: uobrug@bham.ac.uk
+📧 Email the R user group: [uobrug@lists.bham.ac.uk](mailto:uobrug@lists.bham.ac.uk)
 
 📅 Teams: [R User Group Teams Channel](https://teams.microsoft.com/l/channel/19%3Adff6a564ac78446ba73dc6ca4a69e8e4%40thread.tacv2/R%20User%20Group?groupId=e7d5f918-4c85-4aa1-9ddd-a34db82b1729&tenantId=b024cacf-dede-4241-a15c-3c97d553e9f3) 
 
