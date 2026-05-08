@@ -1,0 +1,31 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+
+website:
+  draft-mode: unlinked
+  title: "UoB RUG"
+  image: "media/logo_small_white.png" # TODO
+  site-url: https://uob-rug.github.io
+  description: "University of Birmingham's R-User Group's official website"
+  # favicon: "favicon.png"
+  reader-mode: true
+  search: true
+  repo-url: https://github.com/uob-rug/uob-rug.github.io
+  repo-actions: [edit, issue]
+  navbar:
+    right:
+      - href: about.qmd
+        text: About
+      - meetings.qmd
+    tools:
+      - icon: github
+        href:  https://github.com/uob-rug/uob-rug.github.io
+format:
+  html:
+    theme: 
+      light: uob-rug-light.scss
+      dark: uob-rug-dark.scss
+    toc: true
+    

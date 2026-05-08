@@ -1,4 +1,15 @@
-# University of Birmingham R User Group
+---
+title: "University of Birmingham (UoB) R User Group"
+image: "images/logo_rug.png"
+about:
+  template: trestles
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/uob-rug
+
+---
+
 
 Welcome to the University of Birmingham R User Group!
 
