@@ -1,0 +1,50 @@
+---
+title: "Self-installing R packages on BlueBEAR"
+description: |
+  James Carpenter from the BEAR Apps team in ARC speaks about how to perform self-installation of R packages on
+  the heterogeneous BlueBEAR HPC cluster (including use on BEAR Portal).
+author:
+  - name: James Carpenter
+date: 2026-05-19
+categories:
+  - talks
+  - packages
+image: "../../images/logo_rug.png"
+draft: true
+lightbox: true # N.B. need blank line between photos for this to work
+---
+
+## Overview
+
+## Event details
+
+**Date:** 2026-05-19
+
+**Time:** 15:00
+
+**Location:** Elm House
+
+**Teams**: [TEAMS LINK](url)
+
+## About the speaker
+
+## Resources
+
+- [Slides](URL){target="_blank"} [or add pptx/pdf to directory]
+
+<iframe class="slide-deck ar16x9" src="URL" title="Slides">
+</iframe>
+
+<!--
+
+## Photos
+
+Add after the event
+
+![](media/IMG1.jpeg){group="my-gallery"}
+
+![](media/IMG2.jpeg){group="my-gallery"}
+
+![](media/IMG3.jpeg){group="my-gallery"}
+
+-->
