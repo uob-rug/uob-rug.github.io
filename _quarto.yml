@@ -3,6 +3,9 @@ project:
   render:
     - "*.qmd"
 
+execute: 
+  freeze: auto
+
 website:
   draft-mode: unlinked
   title: "UoB RUG"
