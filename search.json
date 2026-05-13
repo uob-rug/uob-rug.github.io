@@ -1,10 +1,31 @@
 [
   {
+    "objectID": "meetings/2026-05-19-r-packages-bluebear/index.html#event-details",
+    "href": "meetings/2026-05-19-r-packages-bluebear/index.html#event-details",
+    "title": "Optimising R code for BlueBEAR",
+    "section": "Event details",
+    "text": "Event details\nDate: 2026-05-19\nTime: 15:00\nLocation: Elm House\nTeams: TEAMS LINK"
+  },
+  {
+    "objectID": "meetings/2026-05-19-r-packages-bluebear/index.html#about-the-speaker",
+    "href": "meetings/2026-05-19-r-packages-bluebear/index.html#about-the-speaker",
+    "title": "Optimising R code for BlueBEAR",
+    "section": "About the speaker",
+    "text": "About the speaker"
+  },
+  {
+    "objectID": "meetings/2026-05-19-r-packages-bluebear/index.html#resources",
+    "href": "meetings/2026-05-19-r-packages-bluebear/index.html#resources",
+    "title": "Optimising R code for BlueBEAR",
+    "section": "Resources",
+    "text": "Resources\n\nSlides [or add pptx/pdf to directory]"
+  },
+  {
     "objectID": "meetings.html",
     "href": "meetings.html",
     "title": "Meetings",
     "section": "",
-    "text": "Building and maintaining a Bioconductor package: a practical guide\n\n\n\nbioconductor\n\n\n\nOssama Edbali spoke about the requirements to get an R package approved for pubication in Bioconductor.\n\n\n\n\n\nApr 21, 2026\n\n\nOssama Edbali (Research Fellow, Computational Metabolomics)\n\n\n\n\n\nNo matching items"
+    "text": "Optimising R code for BlueBEAR\n\n\n\ntalks\n\npackages\n\n\n\nJames Carpenter from the BEAR Apps team in ARC speaks about how to optimise your R code for the heterogeneous BlueBEAR HPC cluster (including use on BEAR Portal). Topics include self-installing R packages and running parallel jobs.\n\n\n\n\n\nMay 19, 2026\n\n\nJames Carpenter\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding and maintaining a Bioconductor package: a practical guide\n\n\n\nbioconductor\n\n\n\nOssama Edbali spoke about the requirements to get an R package approved for pubication in Bioconductor.\n\n\n\n\n\nApr 21, 2026\n\n\nOssama Edbali (Research Fellow, Computational Metabolomics)\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
