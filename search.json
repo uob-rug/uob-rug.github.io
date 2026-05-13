@@ -1,31 +1,10 @@
 [
   {
-    "objectID": "meetings/2026-04-21-bioconductor/index.html#event-details",
-    "href": "meetings/2026-04-21-bioconductor/index.html#event-details",
-    "title": "Building and maintaining a Bioconductor package: a practical guide",
-    "section": "Event details",
-    "text": "Event details\nDate: 2026-04-21\nTime: 15:00\nLocation: Elm House\nTeams: Teams link"
-  },
-  {
-    "objectID": "meetings/2026-04-21-bioconductor/index.html#about-the-speaker",
-    "href": "meetings/2026-04-21-bioconductor/index.html#about-the-speaker",
-    "title": "Building and maintaining a Bioconductor package: a practical guide",
-    "section": "About the speaker",
-    "text": "About the speaker"
-  },
-  {
-    "objectID": "meetings/2026-04-21-bioconductor/index.html#resources",
-    "href": "meetings/2026-04-21-bioconductor/index.html#resources",
-    "title": "Building and maintaining a Bioconductor package: a practical guide",
-    "section": "Resources",
-    "text": "Resources\n\nSlides"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "University of Birmingham (UoB) R User Group",
+    "objectID": "meetings.html",
+    "href": "meetings.html",
+    "title": "Meetings",
     "section": "",
-    "text": "Welcome to the University of Birmingham R User Group!\n👉 Official University page\nhttps://www.birmingham.ac.uk/research/arc/bear/user-groups/r-user-group\nThis GitHub site hosts code, examples, workshops, and materials for our community."
+    "text": "Building and maintaining a Bioconductor package: a practical guide\n\n\n\nbioconductor\n\n\n\nOssama Edbali spoke about the requirements to get an R package approved for pubication in Bioconductor.\n\n\n\n\n\nApr 21, 2026\n\n\nOssama Edbali (Research Fellow, Computational Metabolomics)\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -98,10 +77,31 @@
     "text": "📄 Licence\nUnless otherwise specified, content in this repository is licensed under the MIT Licence. See LICENSE for details."
   },
   {
-    "objectID": "meetings.html",
-    "href": "meetings.html",
-    "title": "Meetings",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "University of Birmingham (UoB) R User Group",
     "section": "",
-    "text": "Building and maintaining a Bioconductor package: a practical guide\n\n\n\nbioconductor\n\n\n\nOssama Edbali spoke about the requirements to get an R package approved for pubication in Bioconductor.\n\n\n\n\n\nApr 21, 2026\n\n\nOssama Edbali (Research Fellow, Computational Metabolomics)\n\n\n\n\n\nNo matching items"
+    "text": "Welcome to the University of Birmingham R User Group!\n👉 Official University page\nhttps://www.birmingham.ac.uk/research/arc/bear/user-groups/r-user-group\nThis GitHub site hosts code, examples, workshops, and materials for our community."
+  },
+  {
+    "objectID": "meetings/2026-04-21-bioconductor/index.html#event-details",
+    "href": "meetings/2026-04-21-bioconductor/index.html#event-details",
+    "title": "Building and maintaining a Bioconductor package: a practical guide",
+    "section": "Event details",
+    "text": "Event details\nDate: 2026-04-21\nTime: 15:00\nLocation: Elm House\nTeams: Teams link"
+  },
+  {
+    "objectID": "meetings/2026-04-21-bioconductor/index.html#about-the-speaker",
+    "href": "meetings/2026-04-21-bioconductor/index.html#about-the-speaker",
+    "title": "Building and maintaining a Bioconductor package: a practical guide",
+    "section": "About the speaker",
+    "text": "About the speaker"
+  },
+  {
+    "objectID": "meetings/2026-04-21-bioconductor/index.html#resources",
+    "href": "meetings/2026-04-21-bioconductor/index.html#resources",
+    "title": "Building and maintaining a Bioconductor package: a practical guide",
+    "section": "Resources",
+    "text": "Resources\n\nSlides"
   }
 ]

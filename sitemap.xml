@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://uob-rug.github.io/meetings/2026-04-21-bioconductor/index.html</loc>
-    <lastmod>2026-05-12T15:33:24.959Z</lastmod>
-  </url>
-  <url>
-    <loc>https://uob-rug.github.io/index.html</loc>
-    <lastmod>2026-05-12T15:33:24.958Z</lastmod>
+    <loc>https://uob-rug.github.io/meetings.html</loc>
+    <lastmod>2026-05-13T10:17:27.233Z</lastmod>
   </url>
   <url>
     <loc>https://uob-rug.github.io/about.html</loc>
-    <lastmod>2026-05-12T15:33:24.958Z</lastmod>
+    <lastmod>2026-05-13T10:17:27.233Z</lastmod>
   </url>
   <url>
-    <loc>https://uob-rug.github.io/meetings.html</loc>
-    <lastmod>2026-05-12T15:33:24.958Z</lastmod>
+    <loc>https://uob-rug.github.io/index.html</loc>
+    <lastmod>2026-05-13T10:17:27.233Z</lastmod>
+  </url>
+  <url>
+    <loc>https://uob-rug.github.io/meetings/2026-04-21-bioconductor/index.html</loc>
+    <lastmod>2026-05-13T10:17:27.234Z</lastmod>
   </url>
 </urlset>
