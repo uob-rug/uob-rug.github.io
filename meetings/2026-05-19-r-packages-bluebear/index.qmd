@@ -31,12 +31,10 @@ lightbox: true # N.B. need blank line between photos for this to work
 
 ## Resources
 
-- [Slides](URL){target="_blank"} [or add pptx/pdf to directory]
+- [Slides coming soon](URL){target="_blank"}
 
-<iframe class="slide-deck ar16x9" src="URL" title="Slides">
+<!--- <iframe class="slide-deck ar16x9" src="URL" title="Slides">
 </iframe>
-
-<!--
 
 ## Photos
 
