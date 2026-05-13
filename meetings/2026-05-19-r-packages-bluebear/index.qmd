@@ -1,16 +1,17 @@
 ---
-title: "Self-installing R packages on BlueBEAR"
+title: "Optimising R code for BlueBEAR"
 description: |
-  James Carpenter from the BEAR Apps team in ARC speaks about how to perform self-installation of R packages on
-  the heterogeneous BlueBEAR HPC cluster (including use on BEAR Portal).
+  James Carpenter from the BEAR Apps team in ARC speaks about how to optimise your R code for
+  the heterogeneous BlueBEAR HPC cluster (including use on BEAR Portal). Topics include self-installing R packages and running parallel jobs.
 author:
   - name: James Carpenter
+    url: https://www.birmingham.ac.uk/research/arc/rsg/staff/james-carpenter
 date: 2026-05-19
 categories:
   - talks
   - packages
 image: "../../images/logo_rug.png"
-draft: true
+draft: false
 lightbox: true # N.B. need blank line between photos for this to work
 ---
 
@@ -24,7 +25,7 @@ lightbox: true # N.B. need blank line between photos for this to work
 
 **Location:** Elm House
 
-**Teams**: [TEAMS LINK](url)
+**Teams**: [TEAMS LINK](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyZDdlNGUtZjI5ZC00Yzk5LWJkMjktYmViZWM1YzNhOTFi%40thread.v2/0?context=%7b%22Tid%22%3a%22b024cacf-dede-4241-a15c-3c97d553e9f3%22%2c%22Oid%22%3a%229255ac55-8191-41dc-94ee-df2e74a27860%22%7d)
 
 ## About the speaker
 
