@@ -31,14 +31,14 @@ lightbox: true # N.B. need blank line between photos for this to work
 
 ## Resources
 
-- [Slides coming soon](URL){target="_blank"}
+- [Slides](2026-05_R_User_Group.pdf){target="_blank"}
 - [Meeting agenda](https://bham-my.sharepoint.com/:w:/r/personal/a_changenet_bham_ac_uk/_layouts/15/guestaccess.aspx?share=IQAv8cqG4TUxRqRO9anyx0d4ATvgl3dg9U_MCjdrwHWL3QE&isSPOFile=1&ovuser=b024cacf-dede-4241-a15c-3c97d553e9f3%2Cc.c.stawitz%40bham.ac.uk&wdExp=TEAMS-TREATMENT&web=1&CID=09faf711-690d-4c02-9f5a-2cf02ae3939f&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNjA0MTYxNzIxNSJ9&linkOpenTime=1779288202840)
 - [Meeting recording](https://bham-my.sharepoint.com/personal/c_c_stawitz_bham_ac_uk/Documents/Recordings/R%20user%20group%20meeting%20placeholder-20260519_150338-Meeting%20Recording.mp4?csf=1&web=1&e=D1C1WC&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-<!--- <iframe class="slide-deck ar16x9" src="URL" title="Slides">
+<iframe class="slide-deck ar16x9" src="2026-05_R_User_Group.pdf" title="Slides">
 </iframe>
 
-## Photos
+<!-- ## Photos
 
 Add after the event
 
