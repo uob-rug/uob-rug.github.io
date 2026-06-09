@@ -49,6 +49,8 @@ Slides still under development!
 :::
 
 - [Slides](https://ellakaye.github.io/user2026-jugglr){target="_blank"} 
+- [Meeting agenda](https://bham.sharepoint.com/sites/ResearchComputingandDataCommunity-Network/Shared%20Documents/R%20User%20Group/Meeting_agenda/20260623%20-%20R%20User%20Group%20Agenda.docx?d=wff0fa402f5aa424fab8261adaf0a00b1&csf=1&web=1&e=ZSceKU) 
+- [Meeting recording](https://bham.sharepoint.com/sites/ResearchComputingandDataCommunity-Network/Shared%20Documents/R%20User%20Group/Meeting_recording?csf=1&web=1&e=ot8du3) 
 
 <iframe class="slide-deck ar16x9" src="https://ellakaye.github.io/user2026-jugglr" title="Slides">
 </iframe>
