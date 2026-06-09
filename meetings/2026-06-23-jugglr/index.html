@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Ella Kaye">
+<meta name="dcterms.date" content="2026-06-23">
+<meta name="description" content="Ella Kaye introduces the jugglr package for validating and visualising juggling sequences, and uses it as a case study of incorporating the new(ish) S7 OOP system in a package.">
 
-<title>Meetings – UoB RUG</title>
+<title>Juggling with S7 – UoB RUG</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,29 +29,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-56967776b122c97278c41f61ed2ce852.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-55fed8e2ddce06636ec2eceff2c4e6cc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-56967776b122c97278c41f61ed2ce852.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-56967776b122c97278c41f61ed2ce852.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-55fed8e2ddce06636ec2eceff2c4e6cc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-56967776b122c97278c41f61ed2ce852.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,65 +77,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -307,7 +250,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">UoB RUG</span>
     </a>
   </div>
@@ -318,11 +261,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./meetings.html" aria-current="page"> 
+    <a class="nav-link" href="../../meetings.html"> 
 <span class="menu-text">Meetings</span></a>
   </li>  
 </ul>
@@ -344,22 +287,52 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="YmlvY29uZHVjdG9y">bioconductor <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGFja2FnZXM=">packages <span class="quarto-category-count">(2)</span></div><div class="category" data-category="dGFsa3M=">talks <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#event-details" id="toc-event-details" class="nav-link" data-scroll-target="#event-details">Event details</a></li>
+  <li><a href="#about-the-speaker" id="toc-about-the-speaker" class="nav-link" data-scroll-target="#about-the-speaker">About the speaker</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/uob-rug/uob-rug.github.io/edit/main/meetings/2026-06-23-jugglr/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/uob-rug/uob-rug.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Meetings</h1>
-</div>
+<h1 class="title">Juggling with S7</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">talks</div>
+    <div class="quarto-category">packages</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    <p>Ella Kaye introduces the <strong>jugglr</strong> package for validating and visualising juggling sequences, and uses it as a case study of incorporating the new(ish) S7 OOP system in a package.</p>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="https://ellakaye.co.uk">Ella Kaye</a> </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 23, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -369,109 +342,77 @@ window.Quarto = {
 </header>
 
 
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The throw sequence “423” is a valid pattern for juggling with three balls, but “432” will result in collisions and dropped balls. How can you tell? All juggling patterns can be described in a notation called siteswap, and siteswap sequences can be mathematically validated and visualised.</p>
+<p>In this talk, I introduce jugglr, an R package for working with siteswap sequences. It validates sequences and prints their properties, generates timeline and ladder diagrams with ggplot2, and creates animated GIFs. You’ll learn something about juggling. But this is an R talk, not a juggling convention, so more importantly, you’ll learn about S7, the new(ish) Object Oriented Programming (OOP) system designed to combine the best of S3 and S4 whilst avoiding the pitfalls of each.</p>
+<p>Juggling patterns turn out to be an ideal domain for S7. A siteswap’s validity, period, and number of props are all automatically derived from its throw sequence – a natural fit for S7’s computed properties. Input constraints like “a sequence must contain only alphanumeric characters” map directly to property validators. And the relationship between general siteswap patterns and specific types like vanilla, synchronous and multiplex siteswap is cleanly expressed through S7’s class hierarchy and factory constructors.</p>
+<p>Using S7 in a package is not yet well-documented, so I’ll also share practical lessons from developing jugglr. You’ll leave with both an appreciation for the mathematics of juggling and the confidence to use S7 in your own packages.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a practice run for my talk at the useR! 2026 conference, and I’d very much value feedback from those present on how the talk can be improved!</p>
+</div>
+</div>
+</section>
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event details</h2>
+<p><strong>Date:</strong> Tuesday June 23rd, 2026</p>
+<p><strong>Time:</strong> 15:40-16:40</p>
+<p><strong>Location:</strong> Elm House, Room G08</p>
+<p><strong>Teams</strong>: <a href="https://teams.microsoft.com/meet/31468240773211?p=lPaXEGUkUQA8GLyu6m">TEAMS LINK</a></p>
+</section>
+<section id="about-the-speaker" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-speaker">About the speaker</h2>
+<p>Ella is a Senior Research Software Engineer in the Department of Advanced Research Computing at the University of Birmingham, UK. Her primary project is <a href="https://blog.r-project.org/2025/12/17/rsmf-enabling-the-next-generation-of-contributors-to-r/index.html">‘enabling the next generation of contributors to R’</a>. She also runs <a href="https://rainbowr.org">rainbowR</a>, a community that supports, promotes and connects LGBTQ+ people who code in the R language. Ella enjoys R package development and juggling!</p>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Slides still under development!</p>
+</div>
+</div>
+<ul>
+<li><a href="https://ellakaye.github.io/user2026-jugglr" target="_blank">Slides</a></li>
+<li><a href="https://bham.sharepoint.com/sites/ResearchComputingandDataCommunity-Network/Shared%20Documents/R%20User%20Group/Meeting_agenda/20260623%20-%20R%20User%20Group%20Agenda.docx?d=wff0fa402f5aa424fab8261adaf0a00b1&amp;csf=1&amp;web=1&amp;e=ZSceKU">Meeting agenda</a></li>
+<li><a href="https://bham.sharepoint.com/sites/ResearchComputingandDataCommunity-Network/Shared%20Documents/R%20User%20Group/Meeting_recording?csf=1&amp;web=1&amp;e=ot8du3">Meeting recording</a></li>
+</ul>
+<iframe class="slide-deck ar16x9" src="https://ellakaye.github.io/user2026-jugglr" title="Slides">
+</iframe>
+<!--
+
+## Photos
+
+Add after the event
+
+![](media/IMG1.jpeg){group="my-gallery"}
+
+![](media/IMG2.jpeg){group="my-gallery"}
+
+![](media/IMG3.jpeg){group="my-gallery"}
+
+-->
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="dGFsa3MlMkNwYWNrYWdlcw==" data-listing-date-sort="1782172800000" data-listing-file-modified-sort="1781008471955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="357">
-<div class="thumbnail"><a href="./meetings/2026-06-23-jugglr/index.html" class="no-external">
-
-<img loading="lazy" src="./meetings/2026-06-23-jugglr/jugglr.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./meetings/2026-06-23-jugglr/index.html" class="no-external">Juggling with S7</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGFsa3M='); return false;">talks</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cGFja2FnZXM='); return false;">packages</div>
-
-</div>
-<div class="delink listing-description"><a href="./meetings/2026-06-23-jugglr/index.html" class="no-external">
-<p>Ella Kaye introduces the <strong>jugglr</strong> package for validating and visualising juggling sequences, and uses it as a case study of incorporating the new(ish) S7 OOP system in a package.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./meetings/2026-06-23-jugglr/index.html" class="no-external">
-<div class="listing-date">
-Jun 23, 2026
-</div>
-<div class="listing-author">
-Ella Kaye
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="dGFsa3MlMkNwYWNrYWdlcw==" data-listing-date-sort="1779148800000" data-listing-file-modified-sort="1781008471955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
-<div class="thumbnail"><a href="./meetings/2026-05-19-r-packages-bluebear/index.html" class="no-external">
-
-<img loading="lazy" src="./images/logo_rug.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./meetings/2026-05-19-r-packages-bluebear/index.html" class="no-external">Optimising R code for BlueBEAR</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGFsa3M='); return false;">talks</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cGFja2FnZXM='); return false;">packages</div>
-
-</div>
-<div class="delink listing-description"><a href="./meetings/2026-05-19-r-packages-bluebear/index.html" class="no-external">
-<p>James Carpenter from the BEAR Apps team in ARC speaks about how to optimise your R code for the heterogeneous BlueBEAR HPC cluster (including use on BEAR Portal). Topics include self-installing R packages and running parallel jobs.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./meetings/2026-05-19-r-packages-bluebear/index.html" class="no-external">
-<div class="listing-date">
-May 19, 2026
-</div>
-<div class="listing-author">
-James Carpenter
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="YmlvY29uZHVjdG9y" data-listing-date-sort="1776729600000" data-listing-file-modified-sort="1781008471944" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
-<div class="thumbnail"><a href="./meetings/2026-04-21-bioconductor/index.html" class="no-external">
-
-<img loading="lazy" src="./images/logo_rug.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./meetings/2026-04-21-bioconductor/index.html" class="no-external">Building and maintaining a Bioconductor package: a practical guide</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmlvY29uZHVjdG9y'); return false;">bioconductor</div>
-
-</div>
-<div class="delink listing-description"><a href="./meetings/2026-04-21-bioconductor/index.html" class="no-external">
-<p>Ossama Edbali spoke about the requirements to get an R package approved for pubication in Bioconductor.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./meetings/2026-04-21-bioconductor/index.html" class="no-external">
-<div class="listing-date">
-Apr 21, 2026
-</div>
-<div class="listing-author">
-Ossama Edbali (Research Fellow, Computational Metabolomics)
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -890,4 +831,4 @@ Ossama Edbali (Research Fellow, Computational Metabolomics)
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/uob-rug/uob-rug.github.io/edit/main/meetings.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/uob-rug/uob-rug.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/uob-rug/uob-rug.github.io/edit/main/meetings/2026-06-23-jugglr/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/uob-rug/uob-rug.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

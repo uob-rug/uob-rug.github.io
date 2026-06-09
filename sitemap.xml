@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://uob-rug.github.io/meetings/2026-05-19-r-packages-bluebear/index.html</loc>
-    <lastmod>2026-05-21T09:22:34.305Z</lastmod>
-  </url>
-  <url>
-    <loc>https://uob-rug.github.io/meetings.html</loc>
-    <lastmod>2026-05-21T09:22:34.292Z</lastmod>
-  </url>
-  <url>
-    <loc>https://uob-rug.github.io/about.html</loc>
-    <lastmod>2026-05-21T09:22:34.292Z</lastmod>
-  </url>
-  <url>
-    <loc>https://uob-rug.github.io/index.html</loc>
-    <lastmod>2026-05-21T09:22:34.292Z</lastmod>
+    <loc>https://uob-rug.github.io/meetings/2026-06-23-jugglr/index.html</loc>
+    <lastmod>2026-06-09T12:34:31.955Z</lastmod>
   </url>
   <url>
     <loc>https://uob-rug.github.io/meetings/2026-04-21-bioconductor/index.html</loc>
-    <lastmod>2026-05-21T09:22:34.294Z</lastmod>
+    <lastmod>2026-06-09T12:34:31.944Z</lastmod>
+  </url>
+  <url>
+    <loc>https://uob-rug.github.io/index.html</loc>
+    <lastmod>2026-06-09T12:34:31.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://uob-rug.github.io/about.html</loc>
+    <lastmod>2026-06-09T12:34:31.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://uob-rug.github.io/meetings.html</loc>
+    <lastmod>2026-06-09T12:34:31.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://uob-rug.github.io/meetings/2026-05-19-r-packages-bluebear/index.html</loc>
+    <lastmod>2026-06-09T12:34:31.955Z</lastmod>
   </url>
 </urlset>
