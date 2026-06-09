@@ -1,0 +1,70 @@
+---
+title: "Juggling with S7"
+description: |
+  Ella Kaye introduces the **jugglr** package for validating and visualising juggling sequences, and uses it as a case study of incorporating the new(ish) S7 OOP system in a package. 
+author:
+  - name: Ella Kaye
+    url: https://ellakaye.co.uk
+date: 2026-06-23
+categories:
+  - talks
+  - packages
+image: "jugglr.png"
+draft: false
+lightbox: true # N.B. need blank line between photos for this to work
+---
+
+## Overview
+
+The throw sequence "423" is a valid pattern for juggling with three balls, but "432" will result in collisions and dropped balls. How can you tell? All juggling patterns can be described in a notation called siteswap, and siteswap sequences can be mathematically validated and visualised.
+
+In this talk, I introduce jugglr, an R package for working with siteswap sequences. It validates sequences and prints their properties, generates timeline and ladder diagrams with ggplot2, and creates animated GIFs. You'll learn something about juggling. But this is an R talk, not a juggling convention, so more importantly, you'll learn about S7, the new(ish) Object Oriented Programming (OOP) system designed to combine the best of S3 and S4 whilst avoiding the pitfalls of each.
+
+Juggling patterns turn out to be an ideal domain for S7. A siteswap's validity, period, and number of props are all automatically derived from its throw sequence -- a natural fit for S7's computed properties. Input constraints like "a sequence must contain only alphanumeric characters" map directly to property validators. And the relationship between general siteswap patterns and specific types like vanilla, synchronous and multiplex siteswap is cleanly expressed through S7's class hierarchy and factory constructors.
+
+Using S7 in a package is not yet well-documented, so I'll also share practical lessons from developing jugglr. You'll leave with both an appreciation for the mathematics of juggling and the confidence to use S7 in your own packages.
+
+::: {.callout-note}
+This is a practice run for my talk at the useR! 2026 conference, and I'd very much value feedback from those present on how the talk can be improved!
+:::
+
+## Event details
+
+**Date:** Tuesday June 23rd, 2026
+
+**Time:** 15:40-16:40
+
+**Location:** Elm House, Room G08
+
+**Teams**: [TEAMS LINK](https://teams.microsoft.com/meet/31468240773211?p=lPaXEGUkUQA8GLyu6m)
+
+## About the speaker
+
+Ella is a Senior Research Software Engineer in the Department of Advanced Research Computing at the University of Birmingham, UK. Her primary project is ['enabling the next generation of contributors to R'](https://blog.r-project.org/2025/12/17/rsmf-enabling-the-next-generation-of-contributors-to-r/index.html). She also runs [rainbowR](https://rainbowr.org), a community that supports, promotes and connects LGBTQ+ people who code in the R language. Ella enjoys R package development and juggling!
+
+## Resources
+
+::: {.callout-warning}
+Slides still under development!
+:::
+
+- [Slides](https://ellakaye.github.io/user2026-jugglr){target="_blank"} 
+- [Meeting agenda](https://bham.sharepoint.com/sites/ResearchComputingandDataCommunity-Network/Shared%20Documents/R%20User%20Group/Meeting_agenda/20260623%20-%20R%20User%20Group%20Agenda.docx?d=wff0fa402f5aa424fab8261adaf0a00b1&csf=1&web=1&e=ZSceKU) 
+- [Meeting recording](https://bham.sharepoint.com/sites/ResearchComputingandDataCommunity-Network/Shared%20Documents/R%20User%20Group/Meeting_recording?csf=1&web=1&e=ot8du3) 
+
+<iframe class="slide-deck ar16x9" src="https://ellakaye.github.io/user2026-jugglr" title="Slides">
+</iframe>
+
+<!--
+
+## Photos
+
+Add after the event
+
+![](media/IMG1.jpeg){group="my-gallery"}
+
+![](media/IMG2.jpeg){group="my-gallery"}
+
+![](media/IMG3.jpeg){group="my-gallery"}
+
+-->
